@@ -1,10 +1,11 @@
 <?php 
 	
-	//define("BASE_URL", "http://localhost/tienda_virtual/");
-	const BASE_URL = "http://localhost/fortaleza";
+	//define("BASE_URL", "http://fortalezac.ventasccc.com/login");
+	//const BASE_URL = "http://localhost/fortaleza";
+	const BASE_URL = "http://fortalezac.ventasccc.com/login";
 
 	//Zona horaria
-	date_default_timezone_set('America/Guatemala');
+	date_default_timezone_set('America/Mexico_City');
 
 	//Datos de conexión a Base de Datos
 	const DB_HOST = "localhost";
