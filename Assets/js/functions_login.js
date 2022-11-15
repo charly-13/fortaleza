@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function(){
 				var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 				var ajaxUrl = base_url+'/Login/loginUser'; 
 				var formData = new FormData(formLogin);
-				console.log(formData);
+				// console.log(formData);
 				request.open("POST",ajaxUrl,true); 
-				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				// request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				request.send(formData);
 				request.onreadystatechange = function(){
 					if(request.readyState != 4) return;
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				var request = (window.XMLHttpRequest) ? 
 				new XMLHttpRequest() : 
 				new ActiveXObject('Microsoft.XMLHTTP');
-				
+
 				var ajaxUrl = base_url+'/Login/resetPass'; 
 				var formData = new FormData(formRecetPass);
 				request.open("POST",ajaxUrl,true);
