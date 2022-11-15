@@ -26,9 +26,22 @@ class Categorias extends Controllers{
 	}
 
 	public function setCategoria(){
-		dep($_POST);
-		dep($_FILES);
-		exit();
+		if($_POST){
+			if(empty($_POST['txtNombre']) || empty($_POST['txtDescripcion']) || empty($_POST['listStatus'])){
+				$arrResponse = array('status' => false, 'msg'=>'Datos incorrectos');
+			}else{
+				$intIdcategoria = intval($_POST['idCategoria']);
+				$strCategoria = strClean($_POST['txtNombre']);
+				$strDescripcion = strClean($_POST['txtDescripcion']);
+				$intStatus = intval($_POST['listStatus']);
+					//ALMACENAMOS LOS DATOS DE LA IMAGEN
+				$foto = $_FILES['foto'];
+				$nombre_foto = $foto['name'];
+				$type = $foto['type'];
+				$url_temp=$foto['tmp_name'];
+
+			}
+		}
 
 	}
 

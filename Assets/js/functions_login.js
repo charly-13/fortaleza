@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function(){
 				var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 				var ajaxUrl = base_url+'/Login/loginUser'; 
 				var formData = new FormData(formLogin);
-				request.open("POST",ajaxUrl,true);
+				console.log(formData);
+				request.open("POST",ajaxUrl,true); 
+				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				request.send(formData);
 				request.onreadystatechange = function(){
 					if(request.readyState != 4) return;
@@ -58,9 +60,9 @@ document.addEventListener('DOMContentLoaded', function(){
 			}else{
 				divLoading.style.display = "flex";
 				var request = (window.XMLHttpRequest) ? 
-								new XMLHttpRequest() : 
-								new ActiveXObject('Microsoft.XMLHTTP');
-								
+				new XMLHttpRequest() : 
+				new ActiveXObject('Microsoft.XMLHTTP');
+				
 				var ajaxUrl = base_url+'/Login/resetPass'; 
 				var formData = new FormData(formRecetPass);
 				request.open("POST",ajaxUrl,true);
@@ -119,8 +121,8 @@ document.addEventListener('DOMContentLoaded', function(){
 				}
 				divLoading.style.display = "flex";
 				var request = (window.XMLHttpRequest) ? 
-							new XMLHttpRequest() : 
-							new ActiveXObject('Microsoft.XMLHTTP');
+				new XMLHttpRequest() : 
+				new ActiveXObject('Microsoft.XMLHTTP');
 				var ajaxUrl = base_url+'/Login/setPassword'; 
 				var formData = new FormData(formCambiarPass);
 				request.open("POST",ajaxUrl,true);

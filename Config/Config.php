@@ -8,9 +8,9 @@
 
 	//Datos de conexión a Base de Datos
 	const DB_HOST = "localhost";
-	const DB_NAME = "db_tiendavirtual";
-	const DB_USER = "root";
-	const DB_PASSWORD = "";
+	const DB_NAME = "ventascc_fortaleza";
+	const DB_USER = "ventascc_fortaleza";
+	const DB_PASSWORD = "/*/*ia88tl41";
 	const DB_CHARSET = "utf8";
 
 	//Deliminadores decimal y millar Ej. 24,1989.00
