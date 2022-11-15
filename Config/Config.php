@@ -2,7 +2,7 @@
 	
 	//define("BASE_URL", "http://fortalezac.ventasccc.com/login");
 	//const BASE_URL = "http://localhost/fortaleza";
-	const BASE_URL = "http://fortalezac.ventasccc.com/login";
+	const BASE_URL = "http://fortalezac.ventasccc.com/";
 
 	//Zona horaria
 	date_default_timezone_set('America/Mexico_City');
